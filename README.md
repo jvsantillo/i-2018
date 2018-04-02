@@ -1,7 +1,7 @@
 # i-2018
 Repositório para a disciplina "Integração de aplicações"
 
-# Extend
+# rocket -> gitlab
 Projeto de integração entre rocket.chat e gitlab, a fim de melhorar a comunicação entre a equipe 
 
 ## Obtendo o Projeto
