@@ -1,14 +1,12 @@
 # i-2018
 Repositório para a disciplina "Integração de aplicações"
-[![Build Status](https://travis-ci.org/AmigosDeJesus/Extend.svg?branch=master)](https://travis-ci.org/AmigosDeJesus/Extend)
-# Extend
 
-O escopo do projeto é o de um Hub para sensores.
-Através do site, o usuário poderá cadastrar sensores e o site devolverá um link para que os sensores se comuniquem, apresentando de forma facilitada o que eles tem a exibir.
+# Extend
+Projeto de integração entre rocket.chat e gitlab, a fim de melhorar a comunicação entre a equipe 
 
 ## Obtendo o Projeto
 
-`git clone https://github.com/AmigosDeJesus/Extend`
+`git clone https://github.com/jvsantillo/i-2018/`
 
 ## Pré-Requisitos
 
@@ -20,19 +18,7 @@ To Do
 
 ## Deploy
 
-Comando para a realização do deploy do projeto
-
-`./mvnw org.apache.tomcat.maven:tomcat7-maven-plugin:run -Dmaven.tomcat.port=9090`
-
-## Construído com
-
-* [Maven](https://maven.apache.org/) - Gerenciador de Dependências
-
 ## Estilo de Codificação
-
-Os protótipos de interface serão construídos utilizando o padrão 
-
-* **Material Design** - (https://material.io/guidelines/)
 
 ## Contribuições
 
@@ -48,13 +34,11 @@ To Do
 
 * **Caio Romão** - (https://github.com/caioromao)
 
-* **Eduardo Horst** - (https://github.com/Eddyosos)
+* **Osmar Cavalcante** - (https://github.com/osmarpixuri)
 
-* **Eliezer de Jesus** - (https://github.com/eliezerdejj)
-
-* **Gabriel Nuñez** - (https://github.com/GabrielNunez)
+* **João Vitor Santillo** - (https://github.com/jvsantillo)
 
 ## Licença
 
-Esse projeto está sobre a licença MIT. Veja o arquivo [LICENSE.md](LICENSE.md) para detalhes
+Esse projeto está sobre a licença GPL. Veja o arquivo [LICENSE.md](LICENSE.md) para detalhes
 
