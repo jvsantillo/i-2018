@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package serializacao.java;
+package serializacao;
 
-
-
-
+import java.io.Serializable;
 
 /**
  *
  * @author Alunoinf_2
  */
-public class ContaBancaria{
+public class ContaBancaria implements Serializable{
     
-    private double saldo;
+    public double saldo;
     private int tipo;
     
     public ContaBancaria(float saldo, int tipo){

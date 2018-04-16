@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package serializacao.java;
+package serializacao;
 
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 /**
@@ -20,7 +19,7 @@ public class SerializacaoJava {
      */
     public static void main(String[] args) {
         
-        ContaBancaria conta01 = new ContaBancaria(1950, 1);
+        ContaBancaria conta01 = new ContaBancaria(9000, 1);
         
         try
       {
