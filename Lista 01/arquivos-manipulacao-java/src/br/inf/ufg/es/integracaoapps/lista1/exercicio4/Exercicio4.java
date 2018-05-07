@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercicio4;
+package br.inf.ufg.es.integracaoapps.lista1.exercicio4;
 
 import java.io.FileWriter;
 import java.io.IOException;

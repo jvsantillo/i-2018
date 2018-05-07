@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercicio2;
+package br.inf.ufg.es.integracaoapps.lista1.exercicio2;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;

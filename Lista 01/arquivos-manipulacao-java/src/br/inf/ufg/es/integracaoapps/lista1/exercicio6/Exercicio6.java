@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercicio5;
+package br.inf.ufg.es.integracaoapps.lista1.exercicio6;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -11,40 +11,31 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
 import java.io.PrintWriter;
 
 /**
  *
  * @author jv_sa
  */
-public class NewClass {
-    public static void main(String[] args) throws IOException {
+public class Exercicio6 {
+        public static void main(String[] args) throws IOException {
 
-        File arquivo_converter = new File("C:\\Users\\jv_sa\\Documents\\NetBeansProjects\\"
-                + "IntegracaoApps\\src\\exercicio5\\arquivo.txt");
+        File arquivo_convertido = new File(args[0]);
         
-        File arquivo_convertido = new File("C:\\Users\\jv_sa\\Documents\\NetBeansProjects\\"
-                + "IntegracaoApps\\src\\exercicio5\\binarios.txt");
+        File arquivo_converter = new File(args[1]);
         
         
+       byte[] b = new byte[(int) arquivo_converter.length()];
         
          try {
              FileInputStream fileInputStream = new FileInputStream(arquivo_converter);
-             DataInputStream dis = new DataInputStream(fileInputStream);
              PrintWriter pw = new PrintWriter(arquivo_convertido);
-             
-             String text_lido = dis.readUTF();
-             byte b[] = text_lido.getBytes("UTF-8");
+             fileInputStream.read(b);
 
-            for(int i = 0; i < b.length; i++){
-                pw.print(b[i]);
-            }
-
-
+            String texto = new String(b, "UTF-8");
+            pw.write(texto);
+  
           } catch (FileNotFoundException e) {
                       System.out.println("Arquivo não encontrado");
                       e.printStackTrace();

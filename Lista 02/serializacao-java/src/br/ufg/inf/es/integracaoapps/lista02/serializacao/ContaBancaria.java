@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package serializacao;
+package br.ufg.inf.es.integracaoapps.lista02.serializacao;
 
 import java.io.Serializable;
 
