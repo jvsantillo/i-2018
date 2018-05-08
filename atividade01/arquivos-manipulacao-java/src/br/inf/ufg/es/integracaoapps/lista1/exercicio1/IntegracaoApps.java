@@ -1,42 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.inf.ufg.es.integracaoapps.lista1.exercicio1;
 
-import java.io.DataInputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 /**
  *
- * @author Alunoinf_2
+ * @author Alunoinf_2 
+ * Classe principal que instancia o objeto da classe ConverterHexadecimal
  */
 public class IntegracaoApps {
-
-    /**
-     * @param args the command line arguments
-     */
-    
-  
-    
-    public static void main(String[] args) throws IOException {
+/**
+ *
+ * @author Alunoinf_2 
+ * Método principal que instacia o objeto da classe ConverterHexadecimal
+ * @param args diretório do arquivo .class que terá seus 4 primeiros bytes 
+ * convertidos para hexadecimal
+ * @throws IOException Lança essa exeção se o diretório informado nos argumentos
+ * for inválido
+ */
+    public static void main(String[] args) throws IOException{
         
-        FileInputStream fis = new FileInputStream("C:\\Users\\Alunoinf_2\\Desktop\\Integracao\\Ponto2D.class");
-        DataInputStream dis = new DataInputStream(fis);
-        
-        int valor = dis.readInt();
-        dis.close();
-        String hexadecimal = Integer.toHexString(valor);
-
- 
-        System.out.println("O valor em hexadecimal é: " + hexadecimal);
-
-        
+        ConverterHexadecimal converter = new ConverterHexadecimal();
+        converter.convertaArquivoParaHexadecimal(args[0]);
         
     }
     
